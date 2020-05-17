@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+  }
+  
+  h1,h3{
+    color: #FF3333;
+    font-family: Pacifico;
+  }
+  
+  header{
+    background-color:#33E8FF;
+    border: solid;
+  }
+  
+  
+  
+  .navbar li{
+    width: auto;
+    display: inline-block;
+  }
+  img{
+    width: 650px;
+    height: 220px;
+  }
+  table{
+    margin-left: 500px;
+  }
+  .dish{
+    margin-left: 20px;
+    width: 350px;
+  }
+  /*main{
+    background-color: #F9CFF3;
+  
+  }*/
+  footer{
+    background-color: #FFEA6A;
+  
+  }
+  .cookies {
+      text-align: left;
+      color: blue;
+      border: solid yellow;
+  }
+  
