@@ -1,13 +1,14 @@
 'use strict';
-
+//var times=[] can make times as global variable for each object
+var times= ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'];
 var Seattle= {
     name: 'Seattle',
-    times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
+    //times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
     sum:0,        
     ranNum:0,
     
     getRan : function(min,max){
-        this.ranNum= Math.floor((Math.floor(Math.random() * (max - min + 1)) + min)*(6.3));
+        this.ranNum= Math.floor((Math.floor(Math.random() * (max - min + 1)) + min)*(6.3));// avg/hour=6.3
         //console.log(this.getRan);
         //Seattle.ranNum=Math.floor(Math.random() * (max - min+ 1)) + min;
         return this.getRan;
@@ -23,13 +24,13 @@ var Seattle= {
     h2e.appendChild(ule);
     console.log(ule);
     
-    for(var i=0; i< Seattle.times.length; i++){
+    for(var i=0; i< times.length; i++){
         this.sum+=this.ranNum;
         var lie=document.createElement('li');
     ule.appendChild(lie);
-    lie.textContent= Seattle.times[i]+this.ranNum+' cookies';
+    lie.textContent= times[i]+this.ranNum+' cookies';
         console.log(lie);
-    Seattle.getRan(23,65);
+    Seattle.getRan(23,65);// min customer=23,  max customer=65
     console.log(Seattle);
     
     } 
@@ -53,7 +54,7 @@ Seattle.render();
 
 var Tokyo= {
     name: 'Tokyo',
-    times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
+    //times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
     sum:0,        
     ranNum:0,
     
@@ -73,11 +74,11 @@ var Tokyo= {
     h2e.appendChild(ule);
     console.log(ule);
     
-    for(var i=0; i< Seattle.times.length; i++){
+    for(var i=0; i< times.length; i++){
         this.sum+=this.ranNum;
         var lie=document.createElement('li');
     ule.appendChild(lie);
-    lie.textContent= Seattle.times[i]+this.ranNum+' cookies';
+    lie.textContent= times[i]+this.ranNum+' cookies';
         console.log(lie);
         Tokyo.getRan(3,24);
     console.log(Seattle);
@@ -95,7 +96,7 @@ Tokyo.render();
 
 var Dubai= {
     name: 'Dubai',
-    times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
+    //times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
     sum:0,        
     ranNum:0,
     
@@ -115,11 +116,11 @@ var Dubai= {
     h2e.appendChild(ule);
     console.log(ule);
     
-    for(var i=0; i< Seattle.times.length; i++){
+    for(var i=0; i< times.length; i++){
         this.sum+=this.ranNum;
         var lie=document.createElement('li');
     ule.appendChild(lie);
-    lie.textContent= Dubai.times[i]+this.ranNum+' cookies';
+    lie.textContent= times[i]+this.ranNum+' cookies';
         console.log(lie);
         Dubai.getRan(11,38);
     console.log(Seattle);
@@ -142,7 +143,7 @@ Dubai.render();
 
 var Paris= {
     name: 'Paris',
-    times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
+    //times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
     sum:0,        
     ranNum:0,
     
@@ -163,11 +164,11 @@ var Paris= {
     h2e.appendChild(ule);
     console.log(ule);
     
-    for(var i=0; i< Paris.times.length; i++){
+    for(var i=0; i< times.length; i++){
         this.sum+=this.ranNum;
         var lie=document.createElement('li');
     ule.appendChild(lie);
-    lie.textContent= Paris.times[i]+this.ranNum+' cookies';
+    lie.textContent= times[i]+this.ranNum+' cookies';
         console.log(lie);
         Paris.getRan(20,38);
     console.log(Seattle);
@@ -188,7 +189,7 @@ Paris.render();
 
 var Lima= {
     name: 'Lima',
-    times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
+    //times: ['6am:','7am:',' 8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:',' 6pm:',' 7pm:'],
     sum:0,        
     ranNum:0,
     
@@ -208,11 +209,11 @@ var Lima= {
     h2e.appendChild(ule);
     console.log(ule);
     
-    for(var i=0; i< Lima.times.length; i++){
+    for(var i=0; i< times.length; i++){
         this.sum+=this.ranNum;
         var lie=document.createElement('li');
     ule.appendChild(lie);
-    lie.textContent= Lima.times[i]+this.ranNum+' cookies';
+    lie.textContent= times[i]+this.ranNum+' cookies';
         console.log(lie);
         Lima.getRan(2,16);
     console.log(Seattle);
