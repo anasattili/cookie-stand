@@ -42,4 +42,6 @@ body{
       color: blue;
       border: solid yellow;
   }
-  
+  table,tr,th,td{
+    border: 1px solid black;
+  }
