@@ -45,3 +45,10 @@ body{
   table,tr,th,td{
     border: 1px solid black;
   }
+  div {
+    background-color: greenyellow;
+    border: solid;
+    margin-top: 10px;
+    font-family: cursive;
+    color:blue
+  }
