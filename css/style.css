@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background-color: burlywood;
   }
   
   h1,h3{
@@ -21,9 +22,6 @@ body{
   img{
     width: 650px;
     height: 220px;
-  }
-  table{
-    margin-left: 500px;
   }
   .dish{
     margin-left: 20px;
@@ -49,9 +47,10 @@ body{
    height: 20px;
  } */
 
-  table,tr,th,td{
-    border: 1px solid black;
-  }
+ table,tr,th,td {
+  border: 1px solid blue ;
+  color:black;
+}
   div {
     background-color: greenyellow;
     border: solid;
