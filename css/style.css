@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background-color: burlywood;
   }
   
   h1,h3{
@@ -22,9 +23,6 @@ body{
     width: 650px;
     height: 220px;
   }
-  table{
-    margin-left: 500px;
-  }
   .dish{
     margin-left: 20px;
     width: 350px;
@@ -42,9 +40,17 @@ body{
       color: blue;
       border: solid yellow;
   }
-  table,tr,th,td{
-    border: 1px solid black;
-  }
+
+ /* table,th,td {
+   border: 1px solid ;
+   width: 20px;
+   height: 20px;
+ } */
+
+ table,tr,th,td {
+  border: 1px solid blue ;
+  color:black;
+}
   div {
     background-color: greenyellow;
     border: solid;
@@ -52,3 +58,4 @@ body{
     font-family: cursive;
     color:blue
   }
+
