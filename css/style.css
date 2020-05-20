@@ -42,4 +42,8 @@ body{
       color: blue;
       border: solid yellow;
   }
-  
+ /* table,th,td {
+   border: 1px solid ;
+   width: 20px;
+   height: 20px;
+ } */
