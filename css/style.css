@@ -42,8 +42,21 @@ body{
       color: blue;
       border: solid yellow;
   }
+
  /* table,th,td {
    border: 1px solid ;
    width: 20px;
    height: 20px;
  } */
+
+  table,tr,th,td{
+    border: 1px solid black;
+  }
+  div {
+    background-color: greenyellow;
+    border: solid;
+    margin-top: 10px;
+    font-family: cursive;
+    color:blue
+  }
+
