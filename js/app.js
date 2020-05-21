@@ -72,6 +72,13 @@ Cities.prototype.render = function () {
   }
 };
 
+var salesForm=document.getElementById('salesfrom')
+salesForm.addEventListener('submit', function(event){
+  event.preventDefault();
+  console.log(event);
+  /* var shopName= event.target.shopName;
+  console.log(shopName); */
+});
 //for the first row (head table)
 function rendOneRow() {
 
@@ -141,6 +148,11 @@ for (var i = 0; i < locations.length; i++) {
 }
 
 rendAll();
+
+
+
+  
+
 
 
 
